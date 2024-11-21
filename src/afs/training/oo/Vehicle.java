@@ -1,13 +1,14 @@
 package afs.training.oo;
 
 public class Vehicle {
-    protected String name;
-    protected Integer speed;
-    protected Integer acceleration;
+    private String name;
+    private Integer speed;
+    private Integer acceleration;
 
-    public Vehicle(String name, Integer speed) {
+    public Vehicle(String name, Integer speed, Integer acceleration) {
         this.name = name;
         this.speed = speed;
+        this.acceleration = acceleration;
     }
 
     public void speedUp(){

@@ -5,10 +5,16 @@ public class Main {
         Bus coolBus = new Bus("Cool Bus", 25);
         Driver busDriver = new Driver(coolBus);
 
-        Truck bigTruck = new Truck("Big Truck", 20);
-        Driver truckDriver = new Driver(bigTruck);
+        Engine gasolineEngine = new GasolineEngine();
+        Truck bigGasolineTruck = new Truck("Big Gasoline Truck", 20, gasolineEngine);
+        Driver gasolineTruckDriver = new Driver(bigGasolineTruck);
+
+        Engine electricEngine = new ElectricEngine();
+        Truck bigElectricTruck = new Truck("Big Electric Truck", 20, electricEngine);
+        Driver electricTruckDriver = new Driver(bigElectricTruck);
 
         busDriver.drive();
-        truckDriver.drive();
+        gasolineTruckDriver.drive();
+        electricTruckDriver.drive();
     }
 }
